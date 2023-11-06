@@ -33,6 +33,18 @@ interface ModuleOptions {
    * default: false
    */
   modernPolyfills?: boolean | string[]
+  /**
+   * default: true
+   */
+  renderLegacyChunks?: boolean
+  /**
+   * default: false
+   */
+  externalSystemJS?: boolean;
+  /**
+   * default: true
+   */
+  renderModernChunks?: boolean;
 }
 
 export default defineNuxtModule<ModuleOptions>({
